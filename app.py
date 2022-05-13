@@ -25,8 +25,8 @@ def transcript(request=None):
     }
     pm.execute_notebook(
 
-        'D:\\Pavitra\\NytroAI\\Pycharm\\SSense_AIServices\\in_Notebooks\\AssemblyAI_Transcript.ipynb',
-        '.\out_Notebooks\AssemblyAI_Transcript.ipynb',
+        '.\AssemblyAI_Transcript.ipynb',
+        '.\AssemblyAI_Transcript_out.ipynb',
         parameters=parameters
     )
     logging.info("job completed")
@@ -46,8 +46,8 @@ def CustomerReachedSSense(request=None):
         'text': input_text
     }
     pm.execute_notebook(
-        'D:\\Pavitra\\NytroAI\\Pycharm\\SSense_AIServices\\in_Notebooks\\CustomerReachedSSense.ipynb',
-        '.\out_Notebooks\CustomerReachedSSense.ipynb',
+        '.\CustomerReachedSSense.ipynb',
+        '.\CustomerReachedSSense_out.ipynb',
         parameters=parameters
     )
     logging.info("job completed")
